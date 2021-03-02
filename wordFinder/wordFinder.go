@@ -12,10 +12,14 @@ func main() {
 	words := strings.Fields(sentence)
 	find := os.Args[1:]
 
+	// labeled break and continue
+	//label:
 	for _, f := range find {
 		for index, word := range words {
 			if f == word {
 				fmt.Printf("%2d: %q\n", index+1, word)
+				//break label
+				//continue lable
 			}
 		}
 	}
